@@ -1,3 +1,4 @@
+/* Universal Styles */
 html {
   font-size: 18px;
   font-family: Helvetica;
@@ -9,15 +10,28 @@ html {
   margin: auto;
 }
 
+/* Banner Background*/
+#banner {
+  height: 30rem;
+  width: 100%;
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Header Bar*/
 #header {
   color: white;
   font-size: 1rem;
   background-color: cadetblue;
   padding: 1rem 2rem;
-  margin: 1rem auto;
+  position: relative;
+  top: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 5;
 }
 
 #logo {
@@ -32,4 +46,18 @@ html {
 
 #header nav span {
   margin-left: 2rem;
+}
+
+/* Headline */
+#headline {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  position: relative;
+  top: 11rem;
+  left: 2rem;
+  display: inline-block;
+  float: right;
 }
