@@ -21,7 +21,7 @@ html {
 }
 
 /* Header Bar*/
-#header {
+#headerfull {
   color: white;
   font-size: 1rem;
   background-color: cadetblue;
@@ -32,6 +32,10 @@ html {
   justify-content: space-between;
   align-items: center;
   z-index: 5;
+}
+
+#headermobile {
+  display: none;
 }
 
 #logo {
@@ -85,7 +89,7 @@ html {
   width: 3.5rem;
 }
 
-.service #ruler,  .service #truck {
+.service #ruler, .service #truck {
   width: 5rem;
 }
 
@@ -142,7 +146,7 @@ html {
     height: 22rem;
   }
 
-  #header {
+  #headerfull {
     position: static;
   }
 
@@ -153,5 +157,88 @@ html {
     left: 0;
     padding: 1.75rem 4rem;
     margin-right: 2rem;
+  }
+}
+
+/* Rules for Phone Screen */
+@media only screen and (max-width:470px) {
+  #banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  #headerfull {
+    display: none;
+  }
+
+  #headermobile {
+    color: white;
+    font-size: 1rem;
+    background-color: cadetblue;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+  }
+
+  #headline {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 9rem;
+    padding: 1rem 0;
+    display: block;
+    float: none;
+  }
+
+  #services {
+    display: flex;
+    flex-direction: column;
+    margin: 3.77rem auto;
+  }
+
+  .service {
+    margin: 0;
+  }
+
+  .service #ruler, .service #truck {
+    margin-top: 1.54rem;
+  }
+
+  #information {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+    margin: 0 0 4rem 0;
+  }
+
+  .info h4 {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .info p {
+    font-size: 0.77rem;
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  #footer {
+    margin: 0;
+    padding: 4rem 0;
+    width: 100%;
+  }
+
+  #footer img {
+    margin: auto;
+  }
+
+  #footer p {
+    display: none;
   }
 }
