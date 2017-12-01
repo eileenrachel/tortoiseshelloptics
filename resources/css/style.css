@@ -117,3 +117,17 @@ html {
 .info p {
   line-height: 1.4;
 }
+
+/* Footer */
+#footer {
+  background-color: azure;
+  padding: 4rem;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+#footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
