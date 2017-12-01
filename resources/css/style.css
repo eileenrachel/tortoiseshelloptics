@@ -61,3 +61,34 @@ html {
   display: inline-block;
   float: right;
 }
+
+/* Services */
+#services {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  height: 8rem;
+  text-align: center;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service img {
+  margin: 0 auto;
+}
+
+.service #paper {
+  width: 3.5rem;
+}
+
+.service #ruler,  .service #truck {
+  width: 5rem;
+}
+
+.service p {
+  line-height: 1.4;
+}
